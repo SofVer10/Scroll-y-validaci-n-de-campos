@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtEstadoCivil"
+                android:layout_width="346dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Estado Civil"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDireccion" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1200dp"
+                android:text="Guiardar"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Registro de Usuarios"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="340dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="148dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtApellido"
+                android:layout_width="338dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.531"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+            <EditText
+                android:id="@+id/txtEdad"
+                android:layout_width="348dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Edad"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.557"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
+
+            <EditText
+                android:id="@+id/txtProfesion"
+                android:layout_width="344dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Profesión"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEdad" />
+
+            <EditText
+                android:id="@+id/txtNumTarjeta"
+                android:layout_width="335dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Número de Tarjeta"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.432"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtProfesion" />
+
+            <EditText
+                android:id="@+id/txtDUI"
+                android:layout_width="335dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="DUI"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.472"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAltura" />
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="342dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Teléfono"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEstadoCivil" />
+
+            <EditText
+                android:id="@+id/txtPeso"
+                android:layout_width="339dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="Peso"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+
+            <EditText
+                android:id="@+id/txtNacionalidad"
+                android:layout_width="340dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Nacionalidad"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.463"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+            <EditText
+                android:id="@+id/txtTipoSangre"
+                android:layout_width="332dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Tipo de sangre"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.424"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNumTarjeta" />
+
+            <EditText
+                android:id="@+id/txtAltura"
+                android:layout_width="336dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Altura"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNacionalidad" />
+
+            <EditText
+                android:id="@+id/txtDireccion"
+                android:layout_width="338dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="Dirección"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.408"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTipoSangre" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
